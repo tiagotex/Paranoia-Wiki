@@ -1,4 +1,6 @@
-Most databases ignore null columns when it comes to resolving unique index
+**DISCLAIMER: I believe this is bad advice except for very specific conditions when using MySQL. I recommend against it unless you notice performance performance problems in your production dataset on your production database. - jhawthorn**
+
+Some (FIXME: which?) databases ignore null columns when it comes to resolving unique index
 constraints.  This means unique constraints that involve nullable columns may be
 problematic. Instead of using `NULL` to represent a not-deleted row, you can pick
 a value that you want paranoia to mean not deleted. Note that you can/should

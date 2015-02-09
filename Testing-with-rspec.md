@@ -1,5 +1,3 @@
-## Testing with Rspec
-
 You can use shared examples to help test that models are including `acts_as_paranoid` properly. For example, the following shared examples can be created in `spec/support/shared_examples/paranoia_examples.rb`:
 
 ```ruby

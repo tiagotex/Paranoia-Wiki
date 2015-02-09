@@ -1,4 +1,4 @@
-If you have a abstract base class that other classes inherit from, you cannot add `acts_as_paranoid` on the Abstract Class, otherwise you will get an empty table name in the query:
+If you have an abstract base class that other classes inherit from, you cannot add `acts_as_paranoid` on the Abstract Class, otherwise you will get an empty table name in the query:
 
 ```ruby
 class BaseClass < ActiveRecord::Base

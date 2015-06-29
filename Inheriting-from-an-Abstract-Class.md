@@ -10,7 +10,7 @@ end
 class InheritedClass < BaseClass
 end
 
->> InheritedClass.scoped.where_sql
+>> InheritedClass.default_scoped.where_sql
 # => "WHERE (``.deleted_at IS NULL)"
 ```
 
